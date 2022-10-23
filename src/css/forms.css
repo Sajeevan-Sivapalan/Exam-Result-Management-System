@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-container{
+    width: 500px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-floating{
+    margin: 20px;
+}
+
+textarea{
+    width: 300px !important;
+}
+
+button{
+    margin-right: 20px;
+}
+
+.add-container .alert{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -40px;
+}
+
+#errormeg{
+    position: absolute;
+    bottom: -30px;
+    text-transform: uppercase;
+}

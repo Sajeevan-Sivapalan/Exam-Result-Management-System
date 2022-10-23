@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.roll-number-area{
+    width: 100%;
+    height: 583px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.roll-number-container{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative; 
+}
+
+.roll-number-container h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    color: gray;
+}
+
+.roll-number-container .form-control{
+    width: 300px;
+}
+
+.roll-number-container .btn{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.roll-number-container .alert{
+    width: 90%;
+    height:20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    text-transform: uppercase;
+}
+
+#errormeg{
+    position: absolute;
+    bottom: -5px;
+    left: 43px;
+    text-transform: uppercase;
+}

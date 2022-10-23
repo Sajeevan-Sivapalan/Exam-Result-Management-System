@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.login{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-container h4{
+    font-size: 30px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.login-container .form-floating{
+    margin-top: 20px;
+}
+
+.login-container .btn{
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.login-container .alert{
+    position: absolute;
+    bottom: 10px;
+    text-transform: uppercase;
+}
+
+#errormeg{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 20px;
+    left: 17px;
+}
