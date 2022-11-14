@@ -51,12 +51,17 @@
             }
 
             function store(){
-                $query = "INSERT INTO student (indexNumber, nam, tamil, IT, history, science, english, maths, average, grade) VALUES ('$this->indexNumber', '$this->name', '$this->tamil', '$this->IT', '$this->history', '$this->science', '$this->english', '$this->maths', '$this->average', '$this->grade')";
+                $query = "SELECT * FROM student WHERE indexNumber = '$this->indexNumber'";
+                if($result = mysqli_query($this->connection, $query)){
+                    if($row = mysqli_fetch_array($result))
+                        header('location:addStudent.php?mes=Already Exist');
+                    else{
+						$query = "INSERT INTO student (indexNumber, nam, tamil, IT, history, science, english, maths, average, grade) VALUES ('$this->indexNumber', '$this->name', '$this->tamil', '$this->IT', '$this->history', '$this->science', '$this->english', '$this->maths', '$this->average', '$this->grade')";
 
-                if($result = mysqli_query($this->connection, $query))
-                    header('location:students.php');
-                else
-                    header('location:addStudent.php?mes=Already Added');
+						if($result = mysqli_query($this->connection, $query))
+							header('location:students.php');
+                    }
+                }
             }
 
             function closeServer(){
