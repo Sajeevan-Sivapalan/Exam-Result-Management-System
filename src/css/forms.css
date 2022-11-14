@@ -37,7 +37,7 @@ button{
 .add-container .alert{
     text-transform: uppercase;
     position: absolute;
-    bottom: -40px;
+    bottom: -90px;
 }
 
 #errormeg{
